@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="formulario" id="form">
+       <div class="Titulo">
+        <h2>Recuperar Senha</h2>
+        <h4>Preencha somente os numeros do cpf para criar uma Senha</h4>
+       </div>
+      <!--
+        componetes do formulario
+      -->
+
+      <button onclick="form()">Criar um formulario</button>
+      <script>
+          function form(){
+           document.innerHTML('form');
+          }
+
+      </script>
+
+       <div class="Nome">
+        <label for="Nome" id="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+       </div>
+          <br>
+       <div class="CPF">
+          <label for="cpf">CPF</label>
+          <input type="number" name="cpf" id="CPF">
+       </div>
+         <br>
+       <div class="Codigo">
+        <label for="codigo">Codigo</label>
+        <input type="number" name="codigo" id="code">
+     </div>
+        <br>
+     <div class="Senha">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+     </div>
+       <br>
+     <div class="confirme-senha">
+        <label for="confirmar">Confirmar Senha</label>
+        <input type="password" name="confirmar" id="confirmar">
+     </div>
+
+
+    </div>
+</body>
+</html>
